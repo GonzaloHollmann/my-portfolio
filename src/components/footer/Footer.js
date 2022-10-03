@@ -33,15 +33,12 @@ const Footer = () => {
         <h1>Get in touch</h1>
       </div>
       <div className="footer-contact">
-        <form  className="form" ref={form} onSubmit={sendEmail} >
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          {/* <input type="submit" value="Send" />  */}
-          <button type="submit" value="Send" >
+        <form ref={form} onSubmit={sendEmail} > 
+          <input type="text" name="user_name" placeholder="Name" className="d1"/>         
+          <input type="email" name="user_email" placeholder="Email" className="d2"/>
+          <textarea name="message" placeholder="Message" className="d3"/>
+          <div className="boton">
+            <button type="submit" value="Send" >
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg
@@ -60,10 +57,9 @@ const Footer = () => {
             </div>
             <span>Send</span>
           </button>
+          </div>
         </form>
       </div>
-      <div className="footer-sns">
-        <div className="design-by">Gracias por visitar! </div>
         <div className="sns-links">
           <a
             href="https://www.linkedin.com/in/gonzalo-hollmann-655a0421b/"
@@ -79,11 +75,10 @@ const Footer = () => {
           >
             <i className="fab fa-github twitter"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
-            <i className="fab fa-facebook facebook"></i>
+          <a href="https://twitter.com/gonza_hollmann" target="_blank" rel="noreferrer">
+            <i className="fab fa-twitter twitter"></i>
           </a>
         </div>
-      </div>
     </footer>
   );
 };

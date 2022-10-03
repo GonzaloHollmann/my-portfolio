@@ -12,6 +12,12 @@
     align-items: center;
     height: 100%;
   }
+  .iconos{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto auto auto;
+  }
   
   @media only screen and (max-width: 960px) {
     .info-container {
@@ -19,7 +25,7 @@
       width: 100%;
     }
   
-    .info > h1 {
+    .info > p {
       text-align: center;
       font-size: 25px;
     }

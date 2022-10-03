@@ -20,7 +20,7 @@ const About = () => {
           grupal) para la venta de Sneakers👟, donde decidimos aplicar
           tecnologías que desconocíamos, pero, que con mucha investigación,
           aprendimos. En esta etapa apliqué muchas soft skills, destacando la
-          comunicación, trabajo en equipo, escucha activa y predisposición. ☺️
+          comunicación, trabajo en equipo, escucha activa y predisposición.
         </p>
         <br />
         <a href={Cv} donwload ><div class="button" data-tooltip="Size: 20Mb">
