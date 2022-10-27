@@ -11,6 +11,25 @@ const Navbar = ({ isScrolling }) => {
       <div className="navbar-logo" onClick={toTheTop}>
         Gonzalo Hollmann
       </div>
+      <div className="sns-links">
+          <a
+            href="https://www.linkedin.com/in/gonzalo-hollmann-655a0421b/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/GonzaloHollmann"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-github twitter"></i>
+          </a>
+          <a href="https://twitter.com/gonza_hollmann" target="_blank" rel="noreferrer">
+            <i className="fab fa-twitter twitter"></i>
+          </a>
+        </div>
     </nav>
   );
 };

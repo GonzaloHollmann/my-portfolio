@@ -1,5 +1,7 @@
 .navbar {
     position: fixed;
+    display: flex;
+    justify-content: flex-start;
     top: 0;
     background-color: transparent;
     width: 100%;
@@ -19,4 +21,27 @@
     line-height: 80px;
     color: white;
     cursor: pointer;
+  }
+  .sns-links {
+    display: flex;
+    justify-content:space-evenly;
+    width: 60%;
+    margin: auto auto 15px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .linkedin,
+  .github,
+  .twitter {
+    color: white;
+    font-size: 35px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+  }
+  
+  .linkedin:hover,
+  .github:hover,
+  .twitter:hover {
+    border-color: white;
+    transition: all 0.3s ease-out;
   }

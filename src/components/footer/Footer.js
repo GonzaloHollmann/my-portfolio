@@ -1,40 +1,41 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react"; //, { useRef }
+// import emailjs from "@emailjs/browser";
 import "./Footer.css";
 
 const Footer = () => {
-  const form = useRef();
+//   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_3nzgps5",
-        "template_atjcki6",
-        form.current,
-        "Ums6hXEfihhmsTSfP"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-      alert('Your message has been sent successfully!')
-      window.location.reload()
-  };
-  
+//     emailjs
+//       .sendForm(
+//         "service_3nzgps5",
+//         "template_atjcki6",
+//         form.current,
+//         "Ums6hXEfihhmsTSfP"
+//       )
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//       alert('Your message has been sent successfully!')
+//       window.location.reload()
+//   };
+// ref={form}
+//onSubmit={sendEmail}
   return (
     <footer className="footer">
       <div className="footer-info">
         <h1>Get in touch</h1>
       </div>
       <div className="footer-contact">
-        <form ref={form} onSubmit={sendEmail} > 
-          <input type="text" name="user_name" placeholder="Name" className="d1"/>         
+        <form >  
+          <input type="text" name="user_name" placeholder="Name" className="d1"/>
           <input type="email" name="user_email" placeholder="Email" className="d2"/>
           <textarea name="message" placeholder="Message" className="d3"/>
           <div className="boton">
@@ -82,5 +83,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
